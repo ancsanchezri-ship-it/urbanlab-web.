@@ -5,44 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban+Lab — Contacto</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-<header>
-  <div class="container">
-    <div class="logo">
-      <h1>Urban+Lab</h1>
-      <p>de la visión al valor</p>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Urban+Lab</h1>
+        <p>de la visión al valor</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+          <li><a href="portal-clientes.html" class="login-btn">Portal Clientes</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="proyectos.html">Proyectos</a></li>
-    <li><a href="equipo.html">Equipo</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-    <li><a href="login.html" class="login-btn">Portal Clientes</a></li>
-  </ul>
-</nav>
-  </div>
-</header>
+  </header>
 
-<section class="section">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p>Escríbenos a <a href="mailto:contacto@urbanlab.com">contacto@urbanlab.com</a></p>
-    <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</section>
+  <!-- Sección de contacto -->
+  <section class="section contact-section">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h2>Contáctanos</h2>
+        <p>Si deseas más información sobre nuestros servicios o tienes una idea de proyecto, completa el formulario y te responderemos pronto.</p>
+        <ul>
+          <li><i data-lucide="mail"></i> contacto@urbanlab.com</li>
+          <li><i data-lucide="map-pin"></i> Bogotá, Colombia</li>
+          <li><i data-lucide="phone"></i> +57 300 000 0000</li>
+        </ul>
+      </div>
 
-<footer>
-  <div class="container">
+      <div class="contact-form">
+        <form onsubmit="sendEmail(event)">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre" required>
+
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="Tu correo" required>
+
+          <label>Mensaje</label>
+          <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     <p>© Urban+Lab — de la visión al valor</p>
-  </div>
-</footer>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+
 </body>
 </html>
