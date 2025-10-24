@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban+Lab — Proyectos</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">
@@ -14,45 +18,36 @@
         <p>de la visión al valor</p>
       </div>
       <nav>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="proyectos.html">Proyectos</a></li>
-    <li><a href="equipo.html">Equipo</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-    <li><a href="login.html" class="login-btn">Iniciar sesión</a></li>
-  </ul>
-</nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html" class="active">Proyectos</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html" class="login-btn">Iniciar sesión</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section class="section section-gray">
+  <!-- Proyectos -->
+  <section class="section">
     <div class="container">
-      <h2>Proyectos destacados</h2>
+      <h2>Proyectos Urban+Lab</h2>
       <div class="grid">
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Panadería Barrio Abierto">
-          <h3>Panadería Barrio Abierto</h3>
-          <p>Identidad y experiencia de cliente, aumentando la afluencia y fidelidad local.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Salsamentaria El Rincón">
-          <h3>Salsamentaria El Rincón</h3>
-          <p>Estrategia de marca y activaciones comunitarias para mejorar flujo los fines de semana.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Asadero Los Vecinos">
-          <h3>Asadero Los Vecinos</h3>
-          <p>Programa de identidad y alianzas con comercios cercanos para oferta conjunta.</p>
-        </div>
+        <div class="card"><h3>Alameda 1</h3><p>Proyecto residencial con identidad territorial y enfoque sostenible.</p></div>
+        <div class="card"><h3>Samaná I</h3><p>Desarrollo con integración cultural y económica en entornos turísticos.</p></div>
+        <div class="card"><h3>Playa Bonita</h3><p>Modelo de arquitectura sensible al paisaje y a la comunidad local.</p></div>
+        <div class="card"><h3>Porvenir 23</h3><p>Regeneración urbana con visión integral y participación comunitaria.</p></div>
+        <div class="card"><h3>Orquídea 23</h3><p>Proyecto sostenible con enfoque de innovación y cohesión social.</p></div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>© Urban+Lab — de la visión al valor</p>
-    </div>
+    <p>© Urban+Lab — de la visión al valor</p>
   </footer>
+
+  <script>lucide.createIcons();</script>
 </body>
 </html>
