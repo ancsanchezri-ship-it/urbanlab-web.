@@ -1,0 +1,221 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9f7;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #2b6f3c;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b6f3c;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.hero img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 28px;
+  color: #2b6f3c;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2b6f3c;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-gray {
+  background: #e8f0e8;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2b6f3c;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33% - 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 15px 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #2b6f3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* -------------------------------
+   PORTAL DE CLIENTES
+---------------------------------*/
+.login-container {
+  max-width: 400px;
+  background-color: #f5f5f5;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-weight: 600;
+  color: #4b7b5b;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-form button {
+  background-color: #4b7b5b;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #3d674d;
+}
+
+/* -------------------------------
+   RESPONSIVIDAD GLOBAL
+---------------------------------*/
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  iframe {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 20px; }
+  h2 { font-size: 22px; }
+  .login-form input, .login-form button {
+    font-size: 14px;
+  }
+}
